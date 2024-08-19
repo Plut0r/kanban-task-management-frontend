@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kanban Tasks Management App
 
-## Getting Started
+This is a Kanban-style task management application built with Next.js. The app allows users to create, read, update, and delete tasks, and organize them into different columns representing various stages of a process.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Responsive design for optimal viewing on different devices
+- Create, read, update, and delete boards
+- Create, read, update, and delete tasks
+- Drag and drop tasks between columns
+- User authentication and token management
+- API integration for data persistence
+- Middleware for handling authentication and API requests
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Areas of Improvement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Modal Overflow Handling**: The current modal implementation has issues with overflow. Absolute positioned elements within the modal cause it to scroll internally instead of allowing the content to overflow outside. This makes the modal less user-friendly when dealing with large content.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Live Demo
 
-## Learn More
+Check out the live frontend of the Kanban Task Management app here [live-frontend-link].
 
-To learn more about Next.js, take a look at the following resources:
+## Backend Repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The backend for this application is available here. It provides the API endpoints consumed by the frontend for data persistence and user authentication [[backend repo](https://github.com/Plut0r/kanban-task-management-api)].
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
