@@ -13,7 +13,7 @@ import EditBoard from "./Modals/Board/EditBoard";
 import Error from "./UI/Error";
 
 function Layout({ children }: WithAuthProps) {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1280);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [showMobileSideNav, setShowMobileSideNav] = useState(false);
   const [showNewBoardModal, setShowNewBoardModal] = useState(false);
   const [hideSideNav, setHideSideNav] = useState(false);
