@@ -11,9 +11,10 @@ import useBoards from "@/hooks/useBoards";
 import Loading from "./UI/Loading";
 import EditBoard from "./Modals/Board/EditBoard";
 import Error from "./UI/Error";
+import useIsLargeScreen from "@/hooks/useIsLargeScreen";
 
 function Layout({ children }: WithAuthProps) {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const isLargeScreen = useIsLargeScreen();
   const [showMobileSideNav, setShowMobileSideNav] = useState(false);
   const [showNewBoardModal, setShowNewBoardModal] = useState(false);
   const [hideSideNav, setHideSideNav] = useState(false);
@@ -27,15 +28,6 @@ function Layout({ children }: WithAuthProps) {
   useEffect(() => {
     setBoards(data?.boards);
   }, [data]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1280);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="flex flex-col h-screen">

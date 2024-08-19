@@ -18,7 +18,7 @@ This is a Kanban-style task management application built with Next.js. The app a
 
 ## Live Demo
 
-Check out the live frontend of the Kanban Task Management app here [live-frontend-link].
+Check out the live frontend of the Kanban Task Management app here [[live-frontend-link](https://kanban-task-management-frontend-phi.vercel.app/)].
 
 ## Backend Repository
 
